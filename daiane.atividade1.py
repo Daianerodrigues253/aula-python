@@ -1,89 +1,15 @@
 alunos = []
 
-for i in range(1):
+for i in range (5):
     nome=input("digite o nome do aluno: ")
     nota1 = float(input("digite a primeira nota: "))
     nota2 = float(input("digite a segunda nota: "))
     media = (nota1 + nota2) /2
-alunos.append({
-    "nome": nome,
-    "nota1": nota1,
-    "nota2": nota2,
-    "media": media
-})
+    status ="Aprovado" if media >= 6 else "Reprovado"
+
+    alunos.append([nome, nota1, nota2, media, status])
 print("\n---resultado final---")
 
 for aluno in alunos : 
-    print(f"{aluno['nome']} - nota1:{aluno['nota1']} | nota2:{aluno['nota2']} | media: {aluno['media']:.2f}")
+ print(f"{aluno[0]} - nota1: {aluno[1]} | nota2: {aluno[2]} | media: {aluno[3]:.2f} | status: {aluno[4]}")
 
-alunos = []
-
-for i in range(1):
-    nome=input("digite o nome do aluno: ")
-    nota1 = float(input("digite a primeira nota: "))
-    nota2 = float(input("digite a segunda nota: "))
-    media = (nota1 + nota2) /2
-alunos.append({
-    "nome": nome,
-    "nota1": nota1,
-    "nota2": nota2,
-    "media": media
-})
-print("\n---resultado final---")
-
-for aluno in alunos : 
-    print(f"{aluno['nome']} - nota1:{aluno['nota1']} | nota2:{aluno['nota2']} | media: {aluno['media']:.2f}")
-
-alunos = []
-
-for i in range(1):
-    nome=input("digite o nome do aluno: ")
-    nota1 = float(input("digite a primeira nota: "))
-    nota2 = float(input("digite a segunda nota: "))
-    media = (nota1 + nota2) /2
-alunos.append({
-    "nome": nome,
-    "nota1": nota1,
-    "nota2": nota2,
-    "media": media
-})
-print("\n---resultado final---")
-
-for aluno in alunos : 
-    print(f"{aluno['nome']} - nota1:{aluno['nota1']} | nota2:{aluno['nota2']} | media: {aluno['media']:.2f}")
-
-alunos = []
-
-for i in range(1):
-    nome=input("digite o nome do aluno: ")
-    nota1 = float(input("digite a primeira nota: "))
-    nota2 = float(input("digite a segunda nota: "))
-    media = (nota1 + nota2) /2
-alunos.append({
-    "nome": nome,
-    "nota1": nota1,
-    "nota2": nota2,
-    "media": media
-})
-print("\n---resultado final---")
-
-for aluno in alunos : 
-    print(f"{aluno['nome']} - nota1:{aluno['nota1']} | nota2:{aluno['nota2']} | media: {aluno['media']:.2f}")
-
-alunos = []
-
-for i in range(1):
-    nome=input("digite o nome do aluno: ")
-    nota1 = float(input("digite a primeira nota: "))
-    nota2 = float(input("digite a segunda nota: "))
-    media = (nota1 + nota2) /2
-alunos.append({
-    "nome": nome,
-    "nota1": nota1,
-    "nota2": nota2,
-    "media": media
-})
-print("\n---resultado final---")
-
-for aluno in alunos : 
-    print(f"{aluno['nome']} - nota1:{aluno['nota1']} | nota2:{aluno['nota2']} | media: {aluno['media']:.2f}")
