@@ -1,3 +1,5 @@
+
+
 cliente = []
 
 for i in range(3):
@@ -5,14 +7,12 @@ for i in range(3):
     filme = input('Digite o nome do filme: ')
 
     while True:
-        try:
+        
             nota = float(input('Digite a nota do filme (0 a 10): '))
             if 0 <= nota <= 10:
                 break  
             else:
                 print('Nota inválida! Tente novamente.')
-        except ValueError:
-            print('Digite um número válido!')
 
 
     cliente.append({
@@ -25,4 +25,3 @@ for i in range(3):
 print('\nCadastro finalizado:')
 for item in cliente:
     print(f"Nome: {item['nome']}, Filme: {item['filme']}, Nota: {item['nota']}")
-
